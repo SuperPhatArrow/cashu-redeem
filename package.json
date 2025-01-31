@@ -1,21 +1,9 @@
 {
   "name": "cashu-redeem",
-  "private": false,
-  "version": "0.0.1",
-  "author": "Calle+SuperPhatArrow",
-  "contributors": [],
-  "license": "GPL-3.0-or-later",
-  "engines": {
-    "npm": ">=8.0.0 <9.0.0",
-    "node": ">=16.0.0 <17.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cashubtc/cashu-redeem"
-  },
-  "bugs": {
-    "url": "https://github.com/cashubtc/cashu-redeem/issues"
-  },
+  "version": "0.1.0",
+  "author": "d4rp4t",
+  "type": "module",
+  "private": true,
   "keywords": [
     "Bitcoin",
     "Lightning",
@@ -25,20 +13,50 @@
     "Ecash",
     "LNURL"
   ],
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "@types/axios": "^0.14.0",
-    "typescript": "^4.9.3",
-    "vite": "^4.1.0"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "mocha"
   },
   "dependencies": {
-    "@cashu/cashu-ts": "^0.6.1",
-    "@noble/secp256k1": "^1.7.1",
-    "axios": "^1.6.2"
+    "@cashu/cashu-ts": "^2.1.0",
+    "@getalby/bitcoin-connect-react": "^3.6.3",
+    "@getalby/lightning-tools": "^5.1.2",
+    "@radix-ui/react-checkbox": "^1.1.3",
+    "@radix-ui/react-label": "^2.1.1",
+    "@types/chai-as-promised": "^8.0.1",
+    "bech32": "^2.0.0",
+    "chai-as-promised": "^8.0.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.469.0",
+    "mocha": "9.0.3",
+    "motion": "^11.15.0",
+    "next": "^15.1.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.4.1",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/chai": "^5.0.1",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@webbtc/webln-types": "^3.0.0",
+    "chai": "4.3.4",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
   }
 }
